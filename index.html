@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Oxygen:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    .carousel-caption {
+        position: absolute;
+        top: 40%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        /* padding: 20px;  */
+        font-size: 50px;
+
+
+    }
+
+    .grid img {
+        height: 300px;
+        width: 300px;
+        padding: 20px;
+    }
+
+    .testimonials-img img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .testi {
+        margin-left: 40px;
+    }
+
+    .fa-brands {
+        color: rgb(38, 8, 8);
+    }
+
+    .gallery img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about-with-bg-color {
+        background-color: rgb(95, 95, 234);
+    }
+
+    .grid .row .col {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .grid .row .col:hover {
+        transform: scale(1.1);
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-dark  fixed-top" style="background-color: rgb(182, 164, 138); width: 100vw;">
+        <div class="container-fluid">
+            <div>
+                <img src="images/header3.png" alt="" style="width: 100px;height: 50px;">
+                <b class="navbar-brand text-danger"> #Sparkle Beauty Parlour</b>
+
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#HOME">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" aria-current="page" href="#ABOUT">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" aria-current="page" href="#SERVICES">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" aria-current="page" href="#GALLERY">GALLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" aria-current="page" href="#TESTIMONIALS">TESTIMONIALS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" aria-current="page" href="#CONTACT US">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </nav>
+    <section id="HOME">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="500">
+                    <img src="images/sparke.jpg" class="d-block w-100" alt="Image 1"
+                        style="width: 100vw; height: 100vh;">
+                    <div class="carousel-caption d-none d-md-block" style="color: rgb(106, 7, 7);">
+                        Inner beauty is great <br>
+                        but a little mascara never hurts
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="500">
+                    <img src="images/sparkle2.jpg" class="d-block w-100" alt="Image 2"
+                        style="width: 100vw; height: 100vh;">
+                    <div class="carousel-caption d-none d-md-block">
+                        Beauty Is Not Flawless;<br> It Shines Even Through Your Imperfection
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="500">
+                    <img src="images/sparkle3.jpg" class="d-block w-100" alt="Image 3"
+                        style="width: 100vw; height: 100vh;">
+                    <div class="carousel-caption d-none d-md-block" style="color: rgb(228, 134, 134);">
+                        Beauty Is What You Feel About Yourself <br>Not About What You See In The Mirror
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="card mb-3" style="max-width: 100% ; height: 700px;background-color: bisque; " id="ABOUT">
+        <H1 class="text-center mt-5 mb-5" style="font-family:Dancing Script;">ABOUT US</H1>
+        <div class="row g-0">
+            <div class="col-md-5">
+                <img src="images/ab1.jpg" class="img-fluid rounded-start" alt="..." style="width: 100%;">
+            </div>
+            <div class="col-md-6">
+                <div class="card-body">
+                    <h5 class="ms-5  text-danger">Thank u so much for visting our site</h5>
+                    <p class="ms-5 pt-5">
+                        Here some about us actually what our main focus <br>
+                        Since We are opend<span>Sparkle beauty parlour in</span><span>2019</span> we had a great
+                        journey with our customers<br>
+                        You can also feel more confident and attractive by enhancing your natural features with
+                        make-up or grooming.<br>
+                        Moreover, you can relax and unwind by enjoying a massage, a steam bath, or a aromatherapy
+                        session.<br>
+
+                        You can also visit the place and see how clean and hygienic it is, how friendly and
+                        professional the staff are, and how comfortable and spacious the facilities are<br>.
+                        You can also compare the prices and quality of the services offered by different beauty
+                        parlours and see which one suits your budget and expectations.
+                    </p>
+                    <p class="card-text"><small class="text-body-secondary"></small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="SERVICES">
+        <div class=" text-center ">
+            <h1 class="display-1 " style="font-family: 'Oxygen', sans-serif;color: rgb(60, 14, 14);">SERVICES</h1>
+            <P class="display-5" style="font-family: Dancing Script ;">WHAT WE DO</P>
+        </div>
+        <div style="background-color: bisque;">
+            <div class="container text-center grid">
+                <div class="row">
+                    <div class="col">
+                        <img src="images/pd.png" alt="">
+                        <p style="font-family:Dancing Script;font-size: 50px;color: rgb(70, 10, 10);"> padicure</p>
+                    </div>
+                    <div class="col">
+                        <img src="images/mn.png" alt="">
+                        <p style="font-family:Dancing Script;font-size: 50px;color: rgb(70, 10, 10);">manicure</p>
+                    </div>
+                    <div class="col">
+                        <img src="images/skin.png" alt="" style="padding-left: 60px;">
+                        <p style="font-family:Dancing Script;font-size: 50px;color: rgb(70, 10, 10);">skin cleasing</p>
+                    </div>
+                    <div class="col">
+                        <img src="images/mak.png" alt="">
+                        <p style="font-family:Dancing Script;font-size: 50px;color: rgb(70, 10, 10);">makup</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center grid ">
+                <div class="row">
+                    <div class="col">
+                        <img src="images/eye.png" alt="">
+                        <p style="font-family:Dancing Script;font-size: 50px;color: rgb(70, 10, 10);">Eyebrow Design</p>
+                    </div>
+                    <div class="col">
+                        <img src="images/wax.png" alt="">
+                        <p style="font-family:Dancing Script;font-size: 50px;color: rgb(70, 10, 10);">Waxing</p>
+                    </div>
+                    <div class="col">
+                        <img src="images/hairc.png" alt="">
+                        <p style="font-family:Dancing Script;font-size: 50px;color: rgb(70, 10, 10);">Hair Cut</p>
+                    </div>
+                    <div class="col">
+                        <img src="images/hair.png" alt="">
+                        <p style="font-family:Dancing Script;font-size: 50px;color: rgb(70, 10, 10);">Hair Style</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="GALLERY" style=" top: 0; left: 0; width: 100%;">
+        <div class="container text-center">
+            <h1 style="font-size: 70px; color: rgb(53, 12, 12);">GALLERY</h1>
+            <span style="font-family: Dancing Script; font-size: 30px;">Our Parlour Pictures</span>
+        </div>
+        <div style="background-color: bisque;">
+            <div class="container">
+                <div class="row" style="margin-bottom: 20px;">
+                    <div class="col">
+                        <img src="images/g1.jpg" alt="" style="width: 300px; height: 300px;">
+                    </div>
+                    <div class="col">
+                        <img src="images/g2.jpg" alt="" style="width: 300px; height: 300px;">
+                    </div>
+                    <div class="col">
+                        <img src="images/g3.jpg" alt="" style="width: 300px; height: 300px;">
+                    </div>
+                    <div class="col">
+                        <img src="images/g4.jpg" alt="" style="width: 300px; height: 300px;">
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 20px;">
+                    <div class="col">
+                        <img src="images/g5.jpg" alt="" style="width: 300px; height: 300px;">
+                    </div>
+                    <div class="col">
+                        <img src="images/g6.jpg" alt="" style="width: 300px; height: 300px;">
+                    </div>
+                    <div class="col">
+                        <img src="images/g7.jpg" alt="" style="width: 300px; height: 300px;">
+                    </div>
+                    <div class="col">
+                        <img src="images/g8.jpg" alt="" style="width: 300px; height: 300px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div style="background-color: bisque ;margin-bottom: 20px;" id="TESTIMONIALS">
+        <div class="container text-center">
+            <div style="padding-top: 100px;">
+                <b style="font-size: 30px;">TESTIMONIALS</b>
+                <P>See What Our Custmers Say</P>
+            </div>
+            <div class="row  " style="margin-top: 200px; padding-bottom: 200px;">
+                <div class="col ">
+                    <div class="testimonials-img d-flex ">
+                        <img src="images/testi.jpg" class="rounded-circle " alt="">
+                        <div class="testimonials-box">
+                            <div class="testimonials-name">
+                                <div class="testi text-danger">
+                                    <h5>Alia bhatt</h5>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials-description mt-5 ms--2 pr-3">
+                        <p>Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Fuga possimus quae, soluta cumque,
+                            accusantium debitis consectetur ducimus voluptatum beatae error,
+                            minima repellendus mollitia quas officia laudantium. Qui distinctio velit deleniti?
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testimonials-img d-flex ">
+                        <img src="images/testi1.jpg" class="rounded-circle" alt="">
+                        <div class="testimonials-box pr-5">
+                            <div class="testimonials-name pe-10">
+                                <div class="testi text-danger">
+                                    <h5>shruti hason</h5>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials-description mt-5  pr-5">
+                        <p>Lorem ipsum dolor sit amet <br>consectetur
+                            adipisicing elit. Fuga possimus quae, soluta cumque,
+                            accusantium debitis consectetur ducimus voluptatum beatae error,
+                            minima repellendus mollitia quas officia laudantium. Qui distinctio velit deleniti?</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testimonials-img d-flex">
+                        <img src="images/testi2.jpg" class="rounded-circle" alt="">
+                        <div class="testimonials-box pl-5">
+                            <div class="testimonials-name">
+                                <div class="testi text-danger">
+                                    <h5>kriti sanon</h5>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials-description mt-5">
+                        <p>Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Fuga possimus quae, soluta cumque,
+                            accusantium debitis consectetur ducimus voluptatum beatae error,
+                            minima repellendus mollitia quas officia laudantium. Qui distinctio velit deleniti?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color:  bisque;" id="CONTACT US">
+        <div class="container text-center">
+            <div class="pt-5 pb-5">
+                <h1>CONTACT ON BELOW </h1>
+                <h1>&</h1>
+                <h1>AND FOLLOW US ON BELOW SOCIAL MEDIA</h1>
+            </div>
+            <div class="row">
+                <div class="col pt-5">
+                    <img src="images/logo.jpg" alt="">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="col mt-5 pt-5">
+                    <h2>Address</h2>
+                    <p>JNTU-Hyderbad, beside-Pista house<br>building-32c3 3rd floor</p>
+                </div>
+                <div class="col mt-5 pt-5">
+                    <h2>Contact Us</h2>
+                    <p>987654321</p>
+                    <p>8985695299</p>
+                </div>
+                <div class="col pt-5 mt-5">
+                    <h2>We opend</h2>
+                    <p>Mondat To Friday<br> From 09:00a.m To 06:00pm </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
